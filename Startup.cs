@@ -26,6 +26,7 @@ namespace SamSho5SpcWebApi
                 jsonOpts.JsonSerializerOptions.WriteIndented = true;
                 jsonOpts.JsonSerializerOptions.PropertyNamingPolicy = null;
             });
+            services.AddScoped<SamuraiShodownData>();
             services.AddDbContext<SamShoDbContext>(options => options.UseSqlite(Configuration.GetConnectionString("DefaultConnection")));
         }
 
