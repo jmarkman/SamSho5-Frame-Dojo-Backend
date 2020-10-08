@@ -24,6 +24,12 @@ namespace SamSho5SpcWebApi.Data.Models
         public string Name { get; set; }
 
         /// <summary>
+        /// The name of the move as it appears in the game/game's lore,
+        /// aka "the cool name that isn't a shorthand input"
+        /// </summary>
+        public string DisplayName { get; set; }
+
+        /// <summary>
         /// The base damage of the move
         /// </summary>
         public int? Damage { get; set; }

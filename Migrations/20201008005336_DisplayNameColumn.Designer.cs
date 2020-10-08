@@ -2,15 +2,17 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SamSho5SpcWebApi.Data;
 
 namespace SamSho5SpcWebApi.Migrations
 {
     [DbContext(typeof(SamShoDbContext))]
-    partial class SamShoDbContextModelSnapshot : ModelSnapshot
+    [Migration("20201008005336_DisplayNameColumn")]
+    partial class DisplayNameColumn
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
